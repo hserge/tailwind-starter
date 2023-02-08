@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-blue-500 py-2 px-4 m-5 text-white rounded-xl hover:bg-blue-700;
+  }
+}
+
+.custom-class {
+  @apply bg-red-500;
+}
+
+@media screen(xl) {
+  .custom-class {
+    @apply bg-blue-500;
+  }
+}
